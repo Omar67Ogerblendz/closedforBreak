@@ -9,7 +9,7 @@ body {
 
 .banner{
     background-color: #fff;
-    width: 200px;
+    width: 300px;
     height: 150px;
     border-radius: 10px;
     position: relative;
@@ -18,6 +18,138 @@ body {
 .pin{
     position:absolute;
     top: -150px;
-    left: 45px;
-    background-color:#fff ;
+    left: 45%;
+    color:#fff ;
+}
+.lines{
+    position: relative;
+    top: 150px;
+    background-color: #ccc;
+}
+.lines::before{
+    content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 7%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(119deg);
+}
+.lines::after{
+  content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    right: 13%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(240deg);
+}
+.banner:hover{
+    transform: rotate(-8deg);
+}
+.banner img{
+    width:80px;
+    position: absolute;
+    right:-40px;
+    top: -50px;
+    transform:rotate(30deg);
+}
+
+.closed h1{
+    background-color: #ccc;
+    width: 300px;
+    padding:5px 0;
+    margin-bottom: 18px;
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-color: #fff;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.pin{
+    position:absolute;
+    top: -150px;
+    left: 45%;
+    color:#fff ;
+}
+.lines{
+    position: relative;
+    top: 150px;
+    background-color: #ccc;
+}
+.lines::before{
+    content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 7%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(119deg);
+}
+.lines::after{
+  content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    right: 13%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(240deg);
+}
+.banner:hover{
+    transform: rotate(-8deg);
+}
+.banner img{
+    width:80px;
+    position: absolute;
+    right:-40px;
+    top: -50px;
+    transform:rotate(30deg);
+}
+
+.closed h1{
+    background-color: #ccc;
+    width: 300px;
+    padding:5px 0;
+    margin-bottom: 18px;
+    font-family: "Great Vibes", cursive;
+}
+.closed p, .closed h2{
+    background-color: #fff;
+    width: 300px;
+    font-size: 20px;
+    line-height: .02;
+    font-family: "Great Vibes", cursive;
+}
+.closed p{
+   font-size: 15px;
+}
+}
+.closed p, .closed h2{
+    background-color: #fff;
+    width: 300px;
+    font-size: 20px;
+    line-height: .02;
+    font-family: "Great Vibes", cursive;
+}
+.closed p{
+   font-size: 15px;
 }
